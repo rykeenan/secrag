@@ -1,0 +1,6 @@
+sentence-transformers
+chromadb
+anthropic
+pypdf
+beautifulsoup4
+pytest
