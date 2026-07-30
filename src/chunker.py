@@ -51,12 +51,19 @@ def chunk_text(text, target_words=200, overlap_words=40):
         chunks.append(" ".join(current))
     return chunks
 
+def is_junk(text):
+    """Detect table-of-contents style chunks (dot leaders, page numbers)."""
+    dots = text.count(".")
+    words = len(text.split())
+    return words > 0 and dots / words > 0.5         # more than 1 period per 2 words
+
+
 def chunk_documents(docs):
     """Turn document dictrs into chunk dicts with citation metadata."""
     all_chunks = []
     for doc in docs:
-        pieces = chunk_text(doc["text"])
-        for i, piece in enumerate(pieces):          # i = 0, 1, 2, ... per document
+        pieces = [p for p in chunk_text(doc["text"]) if not is_junk(p)]     # filter first
+        for i, piece in enumerate(pieces):                                 # then number
             all_chunks.append({
                 "source": doc["source"],
                 "chunk_id": i,

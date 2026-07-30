@@ -20,7 +20,7 @@ def build_index():
     except Exception:
         pass                                # didn't exist yet -> fine
 
-    collection = client.create_collection(COLLECTION)
+    collection = client.create_collection(COLLECTION, metadata={"hnsw:space": "cosine"})
 
     print("Ingesting and chunking documents...")
     docs = ingest()

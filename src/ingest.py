@@ -5,8 +5,9 @@ import re # regular expression, for whitespace cleanup
 
 def clean_text(text):
     """Normalize whitespace: collapse space runs and blank-line runs."""
-    text = re.sub(r"[ \t]+", " ", text)  #runs of spaces/tabs -> one spcae 
-    text = re.sub(r"\n\s*\n", "\n\n", text) # runs of blank lines -> one blank line
+    text = re.sub(r"[ \t]+", " ", text)          #runs of spaces/tabs -> one spcae 
+    text = re.sub(r"\n\s*\n", "\n\n", text)      # runs of blank lines -> one blank line
+    text = re.sub(r"^.*(?:\.\s*){5,}\d+\s*$", "", text, flags=re.MULTILINE)  # kill TOC dot-leader lines
     return text.strip()
 
 def extract_pdf(path):
