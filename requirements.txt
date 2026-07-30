@@ -4,3 +4,4 @@ anthropic
 pypdf
 beautifulsoup4
 pytest
+python-dotenv
