@@ -1,0 +1,114 @@
+[
+    {
+      "question": "What are the requirements for passwords at different authentication assurance levels?",
+      "source": "nist_sp_800_63b",
+      "chunk_id": 37,
+      "text_start": "Summary of requirements by AAL"
+    },
+    {
+      "question": "What is indirect prompt injection?",
+      "source": "owasp_llm_top10",
+      "chunk_id": 8,
+      "text_start": "indirect injections can be either intentional"
+    },
+    {
+        "question":"What are prevention and mitigation strategies for prompt injection",
+        "source":"owasp_llm_top10",
+        "chunk_id":10,
+        "text_start": "Define and validate expected output formats"
+    },
+    {
+      "question": "What mitigations does CISA recommend against Akira ransomware?",
+      "source": "cisa_akira_ransomware",
+      "chunk_id": 46,
+      "text_start": "recommend organizations implement the following mitigations"
+    },
+    {
+      "question": "How do i detect ransomware spread?",
+      "source": "cisa_akira_ransomware",
+      "chunk_id": 49,
+      "text_start": "To aid in detecting the ransomware"
+    },
+    {
+      "question": "Containment eradication and recovery of incidents",
+      "source": "nist_sp_800_61",
+      "chunk_id": 103,
+      "text_start": "After containment, eradication may be necessary"
+    },
+    {
+      "question": "What is insecure output handling in LLM applications?",
+      "source": "owasp_llm_top10",
+      "chunk_id": 41,
+      "text_start": "OWASP Top 10 for LLM Applications v2.0"
+    },
+    {
+      "question": "What are prevention strategies for prompt injection in LLM applications?",
+      "source": "owasp_llm_top10",
+      "chunk_id": 63,
+      "text_start": "Avoid Reliance on System Prompts for Strict Behavior Control"
+    },
+    {
+      "question": "What are the four functions of the NIST AI Risk Management Framework?",
+      "source": "nist_ai_rmf_100-1",
+      "chunk_id": 115,
+      "text_start": "Privacy and cybersecurity risk management considerations and approaches"
+    },
+    {
+      "question": "How do I stop attackers from moving between computers on my network?",
+      "source": "cisa_akira_ransomware",
+      "chunk_id": 12,
+      "text_start": "End Update Defense Evasion"
+    },
+    {
+      "question": "What is direct versus indirect prompt injection?",
+      "source": "mitre_atlas_prompt_injection",
+      "chunk_id": 1,
+      "text_start": "Malicious prompts may be injected directly by the adversary"
+    },
+    {
+      "question": "What is phishing-resistant multifactor authentication?",
+      "source": "nist_sp_800_63b",
+      "chunk_id": 264,
+      "text_start": "This prevents a falsified web page" 
+    },
+    {
+      "question": "What are the requirements for passwords as an authenticator type?",
+      "source": "nist_sp_800_63b",
+      "chunk_id": 202,
+      "text_start": "Usability considerations that are applicable to most authenticators"
+    },
+    {
+      "question": "What does NIST recommend for incident response preparation?",
+      "source": "nist_sp_800_61",
+      "chunk_id": 69,
+      "text_start": "tabletop discussions"
+    },
+    {
+      "question": "How does the incident response life cycle map to CSF 2.0 functions?",
+      "source": "nist_sp_800_61",
+      "chunk_id": 26,
+      "text_start": "Previous incident response life cycle model"
+    },
+    {
+      "question": "How can adversaries poison or manipulate RAG databases?",
+      "source": "owasp_llm_top10",
+      "chunk_id": 69,
+      "text_start": "Accept"
+    },
+    {
+      "question": "What is zero-click prompt injection targeting M365?",
+      "source": "mitre_atlas_rag_databases",
+      "chunk_id": 1,
+      "text_start": "EchoLeak: Zero-Click Prompt Injection Targeting"
+    },
+    {
+      "question": "What is the capital of France?",
+      "source": null,
+      "chunk_id": null
+    },
+    {
+      "question": "What does PCI-DSS require for card storage?",
+      "source": null,
+      "chunk_id": null
+    }
+  ]

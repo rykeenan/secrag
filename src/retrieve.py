@@ -41,5 +41,5 @@ if __name__ == "__main__":
     print(f"Query: {query}\n")
     for i, hit in enumerate(retrieve(query), start=1):
         print(f"--- Hit {i}: {hit['source']} (chunk {hit['chunk_id']}, distance {hit['distance']}) ---")
-        print(hit["text"][:300])
+        print(hit["text"][:600])
         print()
